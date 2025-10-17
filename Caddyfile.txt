@@ -1,0 +1,12 @@
+# Lokalne domene koristimo u /etc/hosts ili pravu domenu
+auth.example.com {
+  reverse_proxy keycloak:8443 {
+    transport http {
+      tls_insecure_skip_verify
+    }
+  }
+}
+
+api.example.com {
+  reverse_proxy backend:8080
+}
