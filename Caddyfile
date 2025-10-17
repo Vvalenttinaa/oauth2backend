@@ -1,3 +1,6 @@
+{
+    local_certs
+}
 :80 {
     respond "Caddy radi!" 200
 }
